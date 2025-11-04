@@ -21,8 +21,11 @@ const allowedOrigins = [
   'http://localhost:5174',
   'https://voltifyfrontend.vercel.app',
   'https://voltify-frontend.vercel.app',
+  'https://www.voltify.my.id',
   process.env.FRONTEND_URL
 ].filter(Boolean);
+
+console.log('Allowed Origins:', allowedOrigins);
 
 app.use(cors({
   origin: allowedOrigins,
